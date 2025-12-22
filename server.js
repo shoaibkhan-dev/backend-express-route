@@ -92,3 +92,12 @@ usersRoutes.delete('/:id', (req, res)=>{
 usersRoutes.listen('8000');
 
 
+const express = require('express');
+
+const routes = express();
+
+routes.get('/', async (req, res)=>{
+    res.send({id: 1, message: 'hello world'})
+})
+
+routes.listen('8000')
