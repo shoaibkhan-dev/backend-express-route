@@ -98,8 +98,8 @@ app.get('/product', async(req,res)=>{
     res.send({status:1, message: 'product page api'})
 });
 
-// app.post('/form', (req, res)=>{
-//     res.send({status:2, message:'cart page api'})
-// })
+app.post('/form', (req, res)=>{
+    res.send({status:2, message:'cart page api'})
+})
 
-app.listen('8000')
+app.listen('8000');
