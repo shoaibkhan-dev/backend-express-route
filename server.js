@@ -103,4 +103,6 @@ app.post('/form', (req, res)=>{
     res.send({status:2, message:'cart page api'})
 })
 
-app.listen('8000');
+app.listen(8000, ()=>{
+    console.log('server running')
+});
