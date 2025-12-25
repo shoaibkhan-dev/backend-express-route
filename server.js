@@ -93,6 +93,7 @@
 
 const express=require('express');
 const app = express();
+app.use(express())
 
 app.get('/product', async(req,res)=>{
     res.send({status:1, message: 'product page api'})
