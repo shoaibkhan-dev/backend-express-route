@@ -106,3 +106,11 @@ app.post('/form', (req, res)=>{
 app.listen(8000, ()=>{
     console.log('server running')
 });
+
+
+app.get('/news',(req, res)=>{
+    res.send({status: 2,
+        msg:'news page api',
+        id: 1
+    })
+})
