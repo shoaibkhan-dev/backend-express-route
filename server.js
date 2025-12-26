@@ -111,6 +111,6 @@ app.listen(8000, ()=>{
 app.get('/news',(req, res)=>{
     res.send({status: 2,
         msg:'news page api',
-        id: 1
+        id: 1,
     })
 })
