@@ -95,6 +95,8 @@ const express=require('express');
 const app = express();
 app.use(express())
 
+const port = 5000;
+
 app.get('/product', async(req,res)=>{
     res.send({status:1, message: 'product page api'})
 });
@@ -115,4 +117,6 @@ app.get('/news',(req, res)=>{
     })
 })
 
-app.listen(800)
+app.listen(PORT, ()=>{
+    console.log('server port # 5000')
+})
